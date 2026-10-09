@@ -317,6 +317,22 @@ export function extractStyleBible(params: {
         'no fantasy sci-fi glow', 'no cartoon characters', 'no fake AI text', 'no watermarks',
       ],
     },
+    cartoon: {
+      dimensionality: '2D Hand-Drawn Animated Cartoon Series',
+      visualMedium: 'High-energy 2D episodic cartoon animation cel style, bold clean hand-inked line art, vibrant cel-shaded color palettes, expressive character acting, and dynamic animated episode staging',
+      colorPalette: ['#1E1B4B', '#F59E0B', '#EF4444', '#10B981', '#3B82F6', '#8B5CF6'],
+      lightingStyle: 'Vibrant animated cel lighting, bold rim lights, dramatic cartoon lighting contrasts',
+      textureTreatment: 'Clean hand-inked line art, smooth digital ink and paint cel colors, painted matte backgrounds',
+      lensCharacteristics: 'Dynamic animation camera angles, wide establishing cartoon shots, expressive medium reaction closeups',
+      compositionRules: 'Episodic character-driven staging, clear silhouette action, comedic or dramatic timing staging',
+      characterProportions: 'Stylized animated cartoon characters with expressive eyes, fluid cartoon poses, clear silhouettes',
+      backgroundComplexity: 'Vivid hand-painted animated environment backgrounds matching the episode universe',
+      motionLanguage: 'Snappy episodic cartoon timing, anticipation poses, dynamic squash-and-stretch energy, smooth camera tracking',
+      overlayIntegrationStyle: 'Cartoon episode title cards, dynamic comic-style motion accents, vibrant scene lower thirds',
+      negativePromptConstraints: [
+        'no photorealism', 'no dull grayscale', 'no blurry 3D CGI uncanny valley', 'no live-action photography', 'no watermarks',
+      ],
+    },
     anime: {
       dimensionality: '2D Masterpiece Anime Cel Illustration',
       visualMedium: 'Makoto Shinkai / ufotable theatrical anime cel frame with hand-painted skies and dramatic volumetric lighting',
@@ -376,6 +392,7 @@ export function extractStyleBible(params: {
     key.includes('stick') ? 'stickman' :
     key.includes('kurz') ? 'kurzgesagt' :
     key.includes('doc') ? 'documentary' :
+    key.includes('cartoon') ? 'cartoon' :
     key.includes('anime') ? 'anime' :
     key.includes('white') ? 'whiteboard' :
     key.includes('retro') || key.includes('vhs') ? 'retro' :
