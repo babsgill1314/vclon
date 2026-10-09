@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Local runtime storage & generated media
+.data/
+*.mp4
+*.wav
+*.tmp
+tmp/
+.tmp/
+
+# Logs & Environment
+*.log
+.env*
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
